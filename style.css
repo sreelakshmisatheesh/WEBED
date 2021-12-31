@@ -1,0 +1,206 @@
+#first-div{
+    height: 200px;
+    width:200px;
+    background-color: aqua;
+    /* display:none; */
+    /* visibility: hidden; */
+    
+
+
+
+}
+
+#second-div{
+    height: 200px;
+    width:200px;
+    background-color: brown;
+}
+
+.flex-container{
+    display: flex;
+    width: 100%;
+    height: 350px;
+    background-color: rgb(200, 220, 20);
+    flex-direction: row;
+    /* reverse aayi nos by row coloumn reverse*/
+    /* flex wrap for smooth sitting of nos. kashtappettu erunnathu simple aayi erikkunnu */
+    flex-wrap: wrap-reverse;
+    /* wrap reverse thazhennu allign chythu */
+
+    /* flex direction and flex wrap combined aayittu use chyavunna flex flow. no need to write both separately */
+    flex-flow: row wrap-reverse;
+
+    /* justify container is for X axis and allign items for Y axis */
+    justify-content: space-around;
+    /* justify= center, flex start, flex end, space around , space between*/
+    align-items: center;
+    /* flex is very very important. extension download browser preview.  */
+}
+
+.CHILD{
+    height: 100px;
+    width: 100px;
+    background-color: darkmagenta;
+    margin: 10px;
+    /* ellladathunnum 10 pixel aanu */
+    /* 123456 ine centerlekku konduvannu allign cheyan */
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* font size veluthakkan */
+    font-size: 30px;
+    /* go for flex container */
+
+
+}
+
+
+/* #child1{
+    order: 2;
+    
+    }
+    
+    #child2{
+       order: 3; 
+    }
+    
+    #child3{
+        order:1;
+         */
+    }
+    
+     #child1{
+        
+        flex-grow: 3;
+        /* flex shrink,, allign self */
+        }
+        
+        #child2{
+          /* flex-grow: 20; */
+           align-self: center;
+        }
+        
+        #child3{
+           flex-grow: 50;
+             
+        } 
+
+
+        /* /* .container{
+           width: 100%;
+           height:100vh;
+           background-color: black;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           position: relative;
+           /* DJA= display, justify,align for making box come center. aa violet box i dont knoe how there  */
+
+
+
+        /* } */
+
+        /* .inner-container{
+             width:50% ;
+             height: 50vh;
+             background-color: blue;
+             /* to make blue box comes at center at the container */
+              */
+
+        /* }
+
+        .CHILD1, .CHILD2, .CHILD3, .CHILD4{
+          height: 40px;
+          width: 40px;
+          background-color: red;
+        }
+        /* CHILD 3,4 INU ellathinum same ppty kodukkanel comma ettu name koduthal mathi, but colour change cheyyanel next ppty aayittu ie next bracket aayittu kodukkanam */
+/* 
+       .CHILD2{
+           background-color: salmon;
+           
+       }  */
+
+       /* .CHILD3{
+           background-color: slategray;
+       }
+
+       .CHILD4{
+           background-color: springgreen;
+            */
+
+           /* postion static, position fixed, absolute , relative */
+/* 
+       }
+
+       .CHILD1{
+           margin-left: 20PX;
+           margin-top: 20px; */
+           /* this is due to static case, top koduthal ellarem koode thazhekku konduvarum */
+/* 
+           position: absolute; 
+           top: 200px;
+           left: 0; */
+           /* relative instead of fixed koduthittum molilathe pptykku no change
+           give absolute= child1 aal maari therefore aalkar maari
+           /* fixed= koduthal hide aayi pokum. fixed i think scroll cheyumbol avide aaayittu kanum, but i cant ssee it */  
+            /* next. containeril position relative kodukkuva and child il position absolute koduthu and values kodukkumbo box left sideilellku neengunnu */
+
+            /* absolute aayittulla child relative aayittulla parentine nokkunne */
+
+
+       /* }  */ 
+
+
+
+       .container{
+        height:100vh;
+        width:100%;
+        background-color: black;
+        position:relative;
+       }
+
+       .box{
+           height: 200px;
+           background-color: black;
+           width: 200px;
+           position: relative;
+           /* left: 50%;
+           top: 50%; */
+           transform:rotate(-90deg);
+           /* transform:translate(-50%,-50%); */
+       }
+           /* position vechu center cheyyan above byheart parent relative and */
+
+        .box:before{
+            content:"";
+            position:absolute;
+            height: 100%;
+            width: 100%;
+            background-color: rgb(124, 225, 65);
+            left:50%;
+            border-radius: 50%;
+            
+
+
+        }
+
+        .box:after{
+            content: "";
+            height: 100%;
+            width:100%;
+            background-color: black;
+        }
+
+ .box:hover{
+     background-color: blanchedalmond;
+/* hover used for touch cheyumbol enthu kanikkunnu */
+     
+ }
+
+        
+
+
+
+      
